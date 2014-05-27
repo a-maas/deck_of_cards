@@ -10,11 +10,11 @@ class Card
   end
 
   def red?
-    ( [%w{Hearts Diamonds}].include? @suit ) ? true : false
+    ( %w{Hearts Diamonds}.include? @suit ) ? true : false
   end
 
   def face_card?
-    ( [%w{J Q K}].include? @rank ) ? true : false
+    ( %w{J Q K}.include? @rank ) ? true : false
   end
 
   def <=> card
