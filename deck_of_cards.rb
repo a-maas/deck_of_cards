@@ -29,7 +29,7 @@ class DeckOfCards
   end
 
   def order
-    @cards.sort_by { |card| [SUITS.index(card.suit), RANKS.index(card.rank)] }
+    @cards.sort_by! { |card| [SUITS.index(card.suit), RANKS.index(card.rank)] }
   end
 
   def search_for_card suit, rank
