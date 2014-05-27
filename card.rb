@@ -14,7 +14,7 @@ class Card
   end
 
   def face_card?
-    ( [%w{J Q K A}].include? @rank ) ? true : false
+    ( [%w{J Q K}].include? @rank ) ? true : false
   end
 
   def <=> card
